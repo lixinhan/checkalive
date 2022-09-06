@@ -1,6 +1,6 @@
 {
 "name": "demo",
-"reporter": {
+"recipient": {
     "dingtalk": [
         {
             "id":"dingding-id",
