@@ -12,6 +12,9 @@ we can send report to
 - ~~wechatgroup~~
 - ~~email~~
 
+we can dispath by 
+- crontab
+- ~~self~~ 
 
 
 
