@@ -1,4 +1,4 @@
-package reporter
+package recipient
 
 import (
 	"crypto/hmac"

@@ -2,7 +2,7 @@ package config
 
 import (
 	"checkalive/checker"
-	"checkalive/reporter"
+	"checkalive/recipient"
 	"encoding/json"
 	"flag"
 	"fmt"
@@ -12,13 +12,13 @@ import (
 
 type Config struct {
 	Name string `json:"name"`
-	Reporter Reporter `json:"reporter"`
+	Recipient Recipient `json:"recipient"`
 	Monitor Monitor `json:"monitor"`
 	Template string
 }
 
-type Reporter struct {
-	Dingtalk [] reporter.DingtalkGroupConfig `json:dingtalk`
+type Recipient struct {
+	Dingtalk [] recipient.DingtalkGroupConfig `json:dingtalk`
 }
 
 type Monitor struct {

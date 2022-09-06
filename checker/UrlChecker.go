@@ -15,7 +15,7 @@ type UrlChecker struct {
 type UrlCheckRules struct {
 	Name string
 	Url string
-	Reporter []string
+	Recipient []string
 }
 
 func (urlChecker *UrlChecker) SetUrl(url string)  {

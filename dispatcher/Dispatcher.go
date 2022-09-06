@@ -3,7 +3,7 @@ package dispatcher
 import (
 	"checkalive/checker"
 	"checkalive/config"
-	"checkalive/reporter"
+	"checkalive/recipient"
 	"checkalive/template"
 )
 
@@ -26,11 +26,11 @@ func (dispatcher *Dispatcher) Url(rules checker.UrlCheckRules)  {
 
 }
 func (dispatcher *Dispatcher) sendMessage(message string )  {
-	for _,v:= range dispatcher.Config.Reporter.Dingtalk{
-		reporter:=reporter.DingtalkGroupMessage{}
-		reporter.SetAccessToken(v.AccessToken);
-		reporter.SetSecret(v.Secret);
-		reporter.SendMessage(message)
+	for _,v:= range dispatcher.Config.Recipient.Dingtalk{
+		recipient:=recipient.DingtalkGroupMessage{}
+		recipient.SetAccessToken(v.AccessToken);
+		recipient.SetSecret(v.Secret);
+		recipient.SendMessage(message)
 	}
 }
 
