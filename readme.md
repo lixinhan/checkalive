@@ -11,7 +11,7 @@ we can send report to
 - dingtalkgroup
 - ~~wechatgroup~~
 - ~~email~~
-
+- ~~sms~~
 we can dispath by 
 - crontab
 - ~~self~~ 
