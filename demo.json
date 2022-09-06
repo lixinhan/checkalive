@@ -1,0 +1,22 @@
+{
+"name": "demo",
+"reporter": {
+    "dingtalk": [
+        {
+            "id":"dingding-id",
+            "name":"dingdingtalk",
+            "accessToken":"",
+            "secret":""
+        }
+    ]
+},
+"monitor": {
+    "url":[
+        {
+            "name": "localhost web service",
+            "url": "https://127.0.0.1/"
+        }
+    ]
+},
+"template":"【test service】\nsericve:%name%  \naddress:%url%  \nerror:%error%"
+}
